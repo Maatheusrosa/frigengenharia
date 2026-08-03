@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projetos FRIG Engenharia - Construções de qualidade">
+    <title>Projetos | FRIG Engenharia</title>
+    <link rel="icon" type="image/png" href="../favicon.png">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Global Stylesheet -->
+    <link rel="stylesheet" href="../assets/css/global.css">
+    
+    <!-- AOS (Animate On Scroll) -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    
+    <!-- Page-specific Stylesheet -->
+    <link rel="stylesheet" href="../assets/css/pages/projects.css">
+</head>
+<body>
+    <!-- ==================== NAVIGATION ==================== -->
+    <nav id="navbar">
+        <div class="navbar-wrapper">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../assets/img/ICON-PNG-FRIG.png" alt="FRIG Engenharia Logo" class="logo-icon-img">
+                    <span class="logo-text">FRIG Engenharia</span>
+                </a>
+            </div>
+            
+            <div class="nav-links">
+                <a href="../index.html">Início</a>
+                <a href="about.html">Sobre</a>
+                <a href="clients.html">Clientes</a>
+                <a href="projects.html" class="active">Projetos</a>
+                <a href="contact.html">Contato</a>
+            </div>
+            
+            <button id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+        <div id="mobile-menu">
+            <a href="../index.html">Início</a>
+            <a href="about.html">Sobre</a>
+            <a href="clients.html">Clientes</a>
+            <a href="projects.html" class="active">Projetos</a>
+            <a href="contact.html">Contato</a>
+        </div>
+    </nav>
+
+    <!-- ==================== PAGE HERO ==================== -->
+    <section class="page-hero">
+        <div class="container text-center">
+            <h1 data-aos="fade-up">Portfólio de <span class="highlight">Projetos</span></h1>
+            <p class="subtitle" data-aos="fade-up" data-aos-delay="100">Conheça alguns dos nossos trabalhos mais destacados em construção civil</p>
+        </div>
+    </section>
+
+    <!-- ==================== MAIN CONTENT ==================== -->
+    <main>
+        <!-- Projects -->
+        <section style="padding: 5rem 1rem; background-color: #fff;">
+            <div class="container">
+                <!-- Project Grid -->
+                <div class="project-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card" data-category="comercial" data-aos="fade-up">
+                        <div class="project-image-container">
+                            🏢
+                            <div class="project-overlay">
+                                <button class="project-btn" onclick="openProjectModal(1)">Ver Detalhes</button>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <p class="project-category">Comercial</p>
+                            <h3 class="project-title">Edifício Comercial Centro</h3>
+                            <p class="project-description">Estrutura metálica com 25 pavimentos e fundações profundas em área de grande circulação.</p>
+                            <div class="project-tags">
+                                <span class="tag">Estrutura Metálica</span>
+                                <span class="tag">BIM</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card" data-category="infraestrutura" data-aos="fade-up" data-aos-delay="100">
+                        <div class="project-image-container">
+                            🌉
+                            <div class="project-overlay">
+                                <button class="project-btn" onclick="openProjectModal(2)">Ver Detalhes</button>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <p class="project-category">Infraestrutura</p>
+                            <h3 class="project-title">Ponte Estaiada Moderna</h3>
+                            <p class="project-description">Obra de infraestrutura com tecnologia de ponta em cabos tensionados, 1.2km de extensão.</p>
+                            <div class="project-tags">
+                                <span class="tag">Infraestrutura</span>
+                                <span class="tag">Análise FEM</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card" data-category="industrial" data-aos="fade-up" data-aos-delay="200">
+                        <div class="project-image-container">
+                            🏭
+                            <div class="project-overlay">
+                                <button class="project-btn" onclick="openProjectModal(3)">Ver Detalhes</button>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <p class="project-category">Industrial</p>
+                            <h3 class="project-title">Complexo Industrial</h3>
+                            <p class="project-description">Galpão industrial otimizado com sistemas de suporte avançado e tecnologia sustentável.</p>
+                            <div class="project-tags">
+                                <span class="tag">Industrial</span>
+                                <span class="tag">CAD 3D</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="project-card" data-category="comercial" data-aos="fade-up" data-aos-delay="300">
+                        <div class="project-image-container">
+                            🏟️
+                            <div class="project-overlay">
+                                <button class="project-btn" onclick="openProjectModal(4)">Ver Detalhes</button>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <p class="project-category">Comercial</p>
+                            <h3 class="project-title">Estádio Multiuso</h3>
+                            <p class="project-description">Estrutura de concreto protendido com 60.000 lugares e sistemas acústicos avançados.</p>
+                            <div class="project-tags">
+                                <span class="tag">Concreto Protendido</span>
+                                <span class="tag">Acústica</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 5 -->
+                    <div class="project-card" data-category="residencial" data-aos="fade-up" data-aos-delay="400">
+                        <div class="project-image-container">
+                            🏘️
+                            <div class="project-overlay">
+                                <button class="project-btn" onclick="openProjectModal(5)">Ver Detalhes</button>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <p class="project-category">Residencial</p>
+                            <h3 class="project-title">Residencial Premium</h3>
+                            <p class="project-description">Torre residencial com 40 pavimentos e estrutura antisísmica com tecnologia inteligente.</p>
+                            <div class="project-tags">
+                                <span class="tag">Residencial</span>
+                                <span class="tag">Sustentável</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 6 -->
+                    <div class="project-card" data-category="infraestrutura" data-aos="fade-up" data-aos-delay="500">
+                        <div class="project-image-container">
+                            ✈️
+                            <div class="project-overlay">
+                                <button class="project-btn" onclick="openProjectModal(6)">Ver Detalhes</button>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <p class="project-category">Infraestrutura</p>
+                            <h3 class="project-title">Terminal Aeroportuário</h3>
+                            <p class="project-description">Estrutura de vidro e aço com cobertura em malha espacial e 45.000m² de área.</p>
+                            <div class="project-tags">
+                                <span class="tag">Malha Espacial</span>
+                                <span class="tag">Vidro Estrutural</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 7 -->
+                    <div class="project-card" data-category="residencial" data-aos="fade-up" data-aos-delay="100">
+                        <div class="project-image-container">
+                            🏠
+                            <div class="project-overlay">
+                                <button class="project-btn" onclick="openProjectModal(7)">Ver Detalhes</button>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <p class="project-category">Residencial</p>
+                            <h3 class="project-title">Condomínio Horizontal</h3>
+                            <p class="project-description">Projeto de loteamento com 150 residências e infraestrutura completa de segurança.</p>
+                            <div class="project-tags">
+                                <span class="tag">Loteamento</span>
+                                <span class="tag">Infraestrutura</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 8 -->
+                    <div class="project-card" data-category="industrial" data-aos="fade-up" data-aos-delay="200">
+                        <div class="project-image-container">
+                            🏗️
+                            <div class="project-overlay">
+                                <button class="project-btn" onclick="openProjectModal(8)">Ver Detalhes</button>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <p class="project-category">Industrial</p>
+                            <h3 class="project-title">Planta de Manufatura</h3>
+                            <p class="project-description">Instalação industrial com linhas de produção automatizadas e segurança integrada.</p>
+                            <div class="project-tags">
+                                <span class="tag">Manufatura</span>
+                                <span class="tag">Automação</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 9 -->
+                    <div class="project-card" data-category="comercial" data-aos="fade-up" data-aos-delay="300">
+                        <div class="project-image-container">
+                            🏪
+                            <div class="project-overlay">
+                                <button class="project-btn" onclick="openProjectModal(9)">Ver Detalhes</button>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <p class="project-category">Comercial</p>
+                            <h3 class="project-title">Shopping Center</h3>
+                            <p class="project-description">Centro comercial com 180 lojas, cinema e alimentação em estrutura inovadora.</p>
+                            <div class="project-tags">
+                                <span class="tag">Comercial</span>
+                                <span class="tag">BIM</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section style="padding: 5rem 1rem; background: linear-gradient(135deg, #000 0%, #1F2937 100%); color: #fff; text-align: center;">
+            <div class="container">
+                <h2 style="font-size: 2.5rem; font-weight: 700; margin-bottom: 1.5rem; color: #fff;" data-aos="fade-up">Próximo Projeto Sua?</h2>
+                <p style="font-size: 1.1rem; margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto; color: #D1D5DB;" data-aos="fade-up" data-aos-delay="100">
+                    Entre em contato conosco e discuta como podemos transformar seu projeto de engenharia
+                </p>
+                <a href="contact.html" style="display: inline-block; background-color: #FBBF24; color: #000; padding: 1rem 2rem; border-radius: 0.5rem; font-weight: 600; text-decoration: none;" data-aos="fade-up" data-aos-delay="200">
+                    Solicitar Orçamento
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==================== PROJECT MODAL ==================== -->
+    <div id="projectModal" class="modal" onclick="if(event.target === this) closeProjectModal()">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeProjectModal()">&times;</button>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer style="background-color: #000; color: #fff; padding: 3rem 1rem 1rem;">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid #374151;">
+                <div>
+                    <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1rem;">
+                        <img src="../assets/img/ICON-PNG-FRIG.png" alt="FRIG Engenharia Logo" style="width: 32px; height: 32px; object-fit: contain;">
+                        <span style="font-size: 1.2rem; font-weight: 700; color: #fff;">FRIG Engenharia</span>
+                    </div>
+                    <p style="color: #9CA3AF; font-size: 0.9rem;">Soluções em construção civil com qualidade.</p>
+                </div>
+
+                <div>
+                    <h4 style="font-weight: 600; margin-bottom: 1rem; color: #fff;">Links Rápidos</h4>
+                    <ul style="list-style: none;">
+                        <li style="margin-bottom: 0.5rem;"><a href="../index.html" style="color: #9CA3AF; text-decoration: none; font-size: 0.9rem;">Início</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="about.html" style="color: #9CA3AF; text-decoration: none; font-size: 0.9rem;">Sobre</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="projects.html" style="color: #9CA3AF; text-decoration: none; font-size: 0.9rem;">Projetos</a></li>
+                        <li><a href="contact.html" style="color: #9CA3AF; text-decoration: none; font-size: 0.9rem;">Contato</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 style="font-weight: 600; margin-bottom: 1rem; color: #fff;">Serviços</h4>
+                    <ul style="list-style: none;">
+                        <li style="margin-bottom: 0.5rem;"><a href="#" style="color: #9CA3AF; text-decoration: none; font-size: 0.9rem;">Engenharia Civil</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="#" style="color: #9CA3AF; text-decoration: none; font-size: 0.9rem;">Estruturas Metálicas</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="#" style="color: #9CA3AF; text-decoration: none; font-size: 0.9rem;">Consultoria Técnica</a></li>
+                        <li><a href="#" style="color: #9CA3AF; text-decoration: none; font-size: 0.9rem;">Análise Estrutural</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 style="font-weight: 600; margin-bottom: 1rem; color: #fff;">Redes Sociais</h4>
+                    <div style="display: flex; gap: 0.75rem;">
+                        <a href="#" style="width: 36px; height: 36px; background-color: #FBBF24; color: #000; border: none; border-radius: 0.25rem; display: flex; align-items: center; justify-content: center; font-weight: 700; text-decoration: none;">f</a>
+                        <a href="#" style="width: 36px; height: 36px; background-color: #FBBF24; color: #000; border: none; border-radius: 0.25rem; display: flex; align-items: center; justify-content: center; font-weight: 700; text-decoration: none;">in</a>
+                        <a href="#" style="width: 36px; height: 36px; background-color: #FBBF24; color: #000; border: none; border-radius: 0.25rem; display: flex; align-items: center; justify-content: center; font-weight: 700; text-decoration: none;">📧</a>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center; color: #9CA3AF; font-size: 0.9rem;">
+                <p>&copy; 2024 FRIG Engenharia. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Project Data and Interactions -->
+    <script src="../assets/js/pages/projects.js"></script>
+    
+    <!-- Global Scripts -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../assets/js/pages/common.js"></script>
+</body>
+</body>
+</html>

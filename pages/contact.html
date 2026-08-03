@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contato FRIG Engenharia - Fale com a gente">
+    <title>Contato | FRIG Engenharia</title>
+    <link rel="icon" type="image/png" href="../favicon.png">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Global Stylesheet -->
+    <link rel="stylesheet" href="../assets/css/global.css">
+    
+    <!-- AOS (Animate On Scroll) -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    
+    <!-- Page-specific Stylesheet -->
+    <link rel="stylesheet" href="../assets/css/pages/contact.css">
+</head>
+<body>
+    <!-- ==================== NAVIGATION ==================== -->
+    <nav id="navbar">
+        <div class="navbar-wrapper">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../assets/img/ICON-PNG-FRIG.png" alt="FRIG Engenharia Logo" class="logo-icon-img">
+                    <span class="logo-text">FRIG Engenharia</span>
+                </a>
+            </div>
+            
+            <div class="nav-links">
+                <a href="../index.html">Início</a>
+                <a href="about.html">Sobre</a>
+                <a href="clients.html">Clientes</a>
+                <a href="projects.html">Projetos</a>
+                <a href="contact.html" class="active">Contato</a>
+            </div>
+            
+            <button id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+        <div id="mobile-menu">
+            <a href="../index.html">Início</a>
+            <a href="about.html">Sobre</a>
+            <a href="clients.html">Clientes</a>
+            <a href="projects.html">Projetos</a>
+            <a href="contact.html" class="active">Contato</a>
+        </div>
+    </nav>
+
+    <!-- ==================== PAGE HERO ==================== -->
+    <section class="page-hero">
+        <div class="container text-center">
+            <h1 data-aos="fade-up">Vamos <span class="highlight">Conversar?</span></h1>
+            <p class="subtitle" data-aos="fade-up" data-aos-delay="100">Entre em contato conosco para discutir seu próximo projeto</p>
+        </div>
+    </section>
+
+    <!-- ==================== MAIN CONTENT ==================== -->
+    <main>
+
+
+        <!-- Contact & FAQ Section -->
+        <section style="padding: 2rem 1rem 5rem;">
+            <div class="container">
+                <div style="max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 2rem;">
+                    
+                    <!-- Contact Form -->
+                    <div class="bento-item bento-wide" data-aos="fade-up">
+                        <div class="form-section" style="background: transparent; border: none; padding: 2rem;">
+                            <h2 style="font-size: 2.5rem; font-weight: 700; margin-bottom: 2rem; color: #f5f5f7;">Envie sua Mensagem</h2>
+                            <form id="contact-form">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="name">Nome Completo *</label>
+                                        <input type="text" id="name" name="name" required placeholder="Seu nome">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">E-mail *</label>
+                                        <input type="email" id="email" name="email" required placeholder="seu.email@exemplo.com">
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="phone">Telefone</label>
+                                        <input type="tel" id="phone" name="phone" placeholder="(11) 3781-3054">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="company">Empresa</label>
+                                        <input type="text" id="company" name="company" placeholder="Nome da empresa">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="subject">Assunto *</label>
+                                    <select id="subject" name="subject" required>
+                                        <option value="">Selecione um assunto</option>
+                                        <option value="orçamento">Solicitação de Orçamento</option>
+                                        <option value="consultoria">Consultoria Técnica</option>
+                                        <option value="projeto">Novo Projeto</option>
+                                        <option value="parceria">Parceria</option>
+                                        <option value="duvida">Dúvida / Informação</option>
+                                        <option value="outro">Outro</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="message">Mensagem *</label>
+                                    <textarea id="message" name="message" required placeholder="Descreva seu projeto ou necessidade..."></textarea>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="checkbox-group">
+                                        <input type="checkbox" id="terms" name="terms" required>
+                                        <label for="terms" style="margin-bottom: 0;">Concordo em receber contato sobre minha solicitação e aceito a <a href="#" style="color: #FBBF24; text-decoration: underline;">política de privacidade</a></label>
+                                    </div>
+                                </div>
+
+                                <button type="submit" class="submit-btn">Enviar Mensagem</button>
+                                <div id="form-message" class="form-message"></div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- FAQ -->
+                    <div class="bento-item bento-wide" data-aos="fade-up" data-aos-delay="100">
+                        <div class="bento-content" style="padding: 2rem;">
+                            <h2 style="font-size: 2rem; font-weight: 700; margin-bottom: 2rem; color: #f5f5f7;">Perguntas Frequentes</h2>
+                            
+                            <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+                                <div style="border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 1.5rem;">
+                                    <h3 style="font-size: 1.1rem; cursor: pointer; display: flex; justify-content: space-between; align-items: center; margin-bottom: 0; color: #f5f5f7;">
+                                        Tempo médio para orçamento?
+                                        <span style="font-size: 0.8rem; color: #FBBF24;">▼</span>
+                                    </h3>
+                                    <p style="display: none; margin-top: 0.75rem; color: #86868b; font-size: 0.95rem;">Geralmente respondemos com um orçamento preliminar em até 48 horas após a análise do projeto.</p>
+                                </div>
+
+                                <div style="border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 1.5rem;">
+                                    <h3 style="font-size: 1.1rem; cursor: pointer; display: flex; justify-content: space-between; align-items: center; margin-bottom: 0; color: #f5f5f7;">
+                                        Vocês atendem a todo o Brasil?
+                                        <span style="font-size: 0.8rem; color: #FBBF24;">▼</span>
+                                    </h3>
+                                    <p style="display: none; margin-top: 0.75rem; color: #86868b; font-size: 0.95rem;">Sim, atuamos em todo o Brasil com filiais principais em São Paulo, Rio de Janeiro e Belo Horizonte.</p>
+                                </div>
+
+                                <div style="border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 1.5rem;">
+                                    <h3 style="font-size: 1.1rem; cursor: pointer; display: flex; justify-content: space-between; align-items: center; margin-bottom: 0; color: #f5f5f7;">
+                                        Qual o investimento mínimo?
+                                        <span style="font-size: 0.8rem; color: #FBBF24;">▼</span>
+                                    </h3>
+                                    <p style="display: none; margin-top: 0.75rem; color: #86868b; font-size: 0.95rem;">Não temos investimento mínimo. Analisamos projetos de qualquer tamanho e complexidade.</p>
+                                </div>
+
+                                <div style="padding-bottom: 0.5rem;">
+                                    <h3 style="font-size: 1.1rem; cursor: pointer; display: flex; justify-content: space-between; align-items: center; margin-bottom: 0; color: #f5f5f7;">
+                                        Fazem acompanhamento na execução?
+                                        <span style="font-size: 0.8rem; color: #FBBF24;">▼</span>
+                                    </h3>
+                                    <p style="display: none; margin-top: 0.75rem; color: #86868b; font-size: 0.95rem;">Sim, oferecemos serviços de superintendência e fiscalização durante toda a execução.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer style="background-color: #000; color: #fff; padding: 3rem 1rem 1rem;">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid #374151;">
+                <div>
+                    <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1rem;">
+                        <img src="../assets/img/ICON-PNG-FRIG.png" alt="FRIG Engenharia Logo" style="width: 32px; height: 32px; object-fit: contain;">
+                        <span style="font-size: 1.2rem; font-weight: 700; color: #fff;">FRIG Engenharia</span>
+                    </div>
+                    <p style="color: #9CA3AF; font-size: 0.9rem;">Soluções em construção civil com qualidade.</p>
+                </div>
+
+                <div>
+                    <h4 style="font-weight: 600; margin-bottom: 1rem; color: #fff;">Links Rápidos</h4>
+                    <ul style="list-style: none;">
+                        <li style="margin-bottom: 0.5rem;"><a href="../index.html" style="color: #9CA3AF; text-decoration: none; font-size: 0.9rem;">Início</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="about.html" style="color: #9CA3AF; text-decoration: none; font-size: 0.9rem;">Sobre</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="projects.html" style="color: #9CA3AF; text-decoration: none; font-size: 0.9rem;">Projetos</a></li>
+                        <li><a href="contact.html" style="color: #9CA3AF; text-decoration: none; font-size: 0.9rem;">Contato</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 style="font-weight: 600; margin-bottom: 1rem; color: #fff;">Serviços</h4>
+                    <ul style="list-style: none;">
+                        <li style="margin-bottom: 0.5rem;"><a href="#" style="color: #9CA3AF; text-decoration: none; font-size: 0.9rem;">Engenharia Civil</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="#" style="color: #9CA3AF; text-decoration: none; font-size: 0.9rem;">Estruturas Metálicas</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="#" style="color: #9CA3AF; text-decoration: none; font-size: 0.9rem;">Consultoria Técnica</a></li>
+                        <li><a href="#" style="color: #9CA3AF; text-decoration: none; font-size: 0.9rem;">Análise Estrutural</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 style="font-weight: 600; margin-bottom: 1rem; color: #fff;">Redes Sociais</h4>
+                    <div style="display: flex; gap: 0.75rem;">
+                        <a href="#" style="width: 36px; height: 36px; background-color: #FBBF24; color: #000; border: none; border-radius: 0.25rem; display: flex; align-items: center; justify-content: center; font-weight: 700; text-decoration: none;">f</a>
+                        <a href="#" style="width: 36px; height: 36px; background-color: #FBBF24; color: #000; border: none; border-radius: 0.25rem; display: flex; align-items: center; justify-content: center; font-weight: 700; text-decoration: none;">in</a>
+                        <a href="#" style="width: 36px; height: 36px; background-color: #FBBF24; color: #000; border: none; border-radius: 0.25rem; display: flex; align-items: center; justify-content: center; font-weight: 700; text-decoration: none;">📧</a>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center; color: #9CA3AF; font-size: 0.9rem;">
+                <p>&copy; 2024 FRIG Engenharia. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Global Scripts -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../assets/js/pages/common.js"></script>
+    <script src="../assets/js/pages/contact.js"></script>
+</body>
+</html>
+</body>
+</html>

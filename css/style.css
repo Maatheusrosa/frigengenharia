@@ -1,0 +1,347 @@
+/* ====================================
+   CUSTOM STYLES - EnginPro
+   ==================================== */
+
+/* Font Configuration */
+:root {
+    --font-poppins: 'Poppins', sans-serif;
+    --font-inter: 'Inter', sans-serif;
+    --color-black: #000000;
+    --color-yellow: #FBBF24;
+    --color-gray-50: #F9FAFB;
+    --color-gray-100: #F3F4F6;
+    --color-gray-200: #E5E7EB;
+    --color-gray-300: #D1D5DB;
+    --color-gray-600: #4B5563;
+    --color-gray-700: #374151;
+    --color-gray-900: #111827;
+}
+
+* {
+    font-family: var(--font-inter);
+}
+
+.font-poppins {
+    font-family: var(--font-poppins) !important;
+}
+
+.font-inter {
+    font-family: var(--font-inter) !important;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-poppins);
+    font-weight: 700;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    transform: translateY(-2px);
+}
+
+/* Buttons */
+button {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* Form Elements */
+input, textarea, select {
+    font-family: var(--font-inter);
+    transition: all 0.3s ease;
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: none;
+}
+
+/* Navbar Scroll Effect */
+#navbar.scrolled {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+}
+
+/* Mobile Menu Animation */
+#menu-toggle span {
+    transition: all 0.3s ease;
+}
+
+#menu-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(8px, 8px);
+}
+
+#menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+#menu-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+}
+
+/* Hero Section */
+section#home {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+/* Gradient Text Animation */
+@keyframes text-shine {
+    0% {
+        background-position: -1000px center;
+    }
+    100% {
+        background-position: 1000px center;
+    }
+}
+
+/* Project Cards Hover */
+.group:hover {
+    --tw-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+                 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Form Input Animation */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+    position: relative;
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="tel"]::placeholder,
+textarea::placeholder {
+    color: #D1D5DB;
+}
+
+/* Checkbox Styling */
+input[type="checkbox"] {
+    accent-color: var(--color-yellow);
+}
+
+/* Success Message */
+#form-message.success {
+    background-color: #ECFDF5;
+    border: 1px solid #D1FAE5;
+    color: #065F46;
+}
+
+#form-message.error {
+    background-color: #FEE2E2;
+    border: 1px solid #FECACA;
+    color: #991B1B;
+}
+
+/* Loading State */
+.loading {
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+/* Scroll Reveal Animation (AOS Override) */
+[data-aos] {
+    opacity: 0;
+}
+
+[data-aos].aos-animate {
+    opacity: 1;
+}
+
+/* Responsive Images */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Sections Padding */
+section {
+    padding: 80px 0;
+}
+
+@media (max-width: 768px) {
+    section {
+        padding: 60px 0;
+    }
+}
+
+/* Container Responsive */
+.max-w-7xl,
+.max-w-6xl,
+.max-w-4xl {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/* Shadow Utilities */
+.shadow-subtle {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.shadow-elevated {
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Transit Effects */
+.transition-all {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Glass Morphism Effect */
+.glass-effect {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Print Styles */
+@media print {
+    nav,
+    footer,
+    #contact {
+        display: none;
+    }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #111827;
+        color: #F3F4F6;
+    }
+    
+    section {
+        background-color: #1F2937;
+    }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #F3F4F6;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #D1D5DB;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #9CA3AF;
+}
+
+/* Smooth Page Transitions */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Hero Image Effects */
+.hero-image {
+    animation: fadeIn 0.8s ease-out 0.2s both;
+}
+
+/* Focus Visible States */
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 2px solid var(--color-yellow);
+    outline-offset: 2px;
+}
+
+/* Responsive Font Sizes */
+h1 {
+    font-size: clamp(2.25rem, 5vw, 3.75rem);
+}
+
+h2 {
+    font-size: clamp(1.875rem, 4vw, 3rem);
+}
+
+h3 {
+    font-size: clamp(1.25rem, 3vw, 1.875rem);
+}
+
+/* Mobile First Responsive */
+@media (max-width: 640px) {
+    .max-w-6xl {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    button {
+        font-size: 0.875rem;
+        padding: 0.75rem 1rem;
+    }
+}
+
+/* State Animations */
+.btn-primary {
+    background-color: var(--color-black);
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: var(--color-yellow);
+    color: var(--color-black);
+}
+
+.btn-primary:active {
+    transform: scale(0.95);
+}
+
+/* Loading Animation */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.spinner {
+    animation: spin 1s linear infinite;
+}
