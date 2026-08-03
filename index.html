@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FRIG Engenharia - Soluções em construção civil com qualidade e profissionalismo.">
+    <title>FRIG Engenharia | Construção Civil</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Global Stylesheet -->
+    <link rel="stylesheet" href="assets/css/global.css">
+    
+    <!-- AOS (Animate On Scroll) -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+    <!-- Page-specific Stylesheet -->
+    <link rel="stylesheet" href="assets/css/pages/index.css">
+    
+</head>
+<body>
+    
+    <!-- ==================== NAVIGATION ==================== -->
+    <nav id="navbar">
+        <div class="navbar-wrapper">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/img/ICON-PNG-FRIG.png" alt="FRIG Engenharia Logo" class="logo-icon-img">
+                    <span class="logo-text">FRIG Engenharia</span>
+                </a>
+            </div>
+            
+            <div class="nav-links">
+                <a href="index.html" class="active">Início</a>
+                <a href="pages/about.html">Sobre</a>
+                <a href="pages/clients.html">Clientes</a>
+                <a href="pages/projects.html">Projetos</a>
+                <a href="pages/contact.html">Contato</a>
+            </div>
+            
+            <button id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+        <div id="mobile-menu">
+            <a href="index.html" class="active">Início</a>
+            <a href="pages/about.html">Sobre</a>
+            <a href="pages/clients.html">Clientes</a>
+            <a href="pages/projects.html">Projetos</a>
+            <a href="pages/contact.html">Contato</a>
+        </div>
+    </nav>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero-section" style="background-image: url('assets/img/mensatwork.jpg');">
+        <!-- Overlay Escuro -->
+        <div class="hero-overlay"></div>
+        
+        <!-- Conteúdo Sobreposto -->
+        <div class="hero-content">
+            <p class="hero-tag" data-aos="fade-up" data-aos-duration="1000">A 8 anos trazendo inovações</p>
+            
+            <h1 class="hero-title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">Construção Civil de<br/><span>Qualidade Comprovada</span></h1>
+            
+            <p class="hero-description" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Transformamos visões em realidades através de engenharia de ponta, equipe certificada e compromisso inabalável com a qualidade.</p>
+            
+            <div class="hero-buttons" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                <a href="pages/contact.html" class="btn btn-primary">Solicitar Orçamento</a>
+                <a href="pages/projects.html" class="btn btn-secondary">Ver Projetos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== ABOUT SECTION PREVIEW ==================== -->
+    <section class="preview-section">
+        <div>
+            <div class="section-header" data-aos="fade-up">
+                <h2>Sobre a FRIG Engenharia</h2>
+                <p>Conheça nossa história, valores e a experiência que nos torna referência na construção civil</p>
+            </div>
+
+            <div class="bento-grid">
+                <div data-aos="fade-up" data-aos-delay="0" class="bento-item bento-large">
+                    <div class="bento-bg-image" style="background-image: url('assets/img/mensatwork.jpg');"></div>
+                    <div class="bento-content">
+                        <h3 class="bento-title">8 Anos de Excelência</h3>
+                        <p class="bento-description">Desde 2018, executamos projetos residenciais, comerciais e industriais de alta complexidade com excelência técnica e compromisso com qualidade.</p>
+                    </div>
+                </div>
+
+                <div data-aos="fade-up" data-aos-delay="100" class="bento-item bento-medium">
+                    <div class="bento-content">
+                        <h3 class="bento-title">Equipe Certificada</h3>
+                        <p class="bento-description">Especialistas em engenharia civil, estrutural e infraestrutura com certificações ISO, CREA, ABNT e acreditação BIM.</p>
+                    </div>
+                </div>
+
+                <div data-aos="fade-up" data-aos-delay="200" class="bento-item bento-wide">
+                    <div class="bento-content">
+                        <h3 class="bento-title">Tecnologia e Experiência</h3>
+                        <p class="bento-description">Utilização de BIM, análise estrutural avançada (FEM), CAD 3D e processos comprovados para máxima eficiência na construção.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cta-button-center" data-aos="fade-up" data-aos-delay="300">
+                <p>Saiba mais sobre nossa história, valores, equipe e credenciais</p>
+                <a href="pages/about.html" class="btn btn-secondary">Conhecer Mais Sobre Nós →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CLIENTS SECTION PREVIEW ==================== -->
+    <section class="preview-section">
+        <div>
+            <div class="section-header" data-aos="fade-up">
+                <h2>Parceiros e Clientes</h2>
+                <p>Confie em quem as maiores empresas confiam - 50+ clientes satisfeitos</p>
+            </div>
+
+            <div class="clients-showcase" data-aos="fade-up" data-aos-delay="100">
+                <div class="clients-track">
+                    <!-- Set 1 -->
+                    <img src="assets/img/clientes/secretaria-educacao-sp.png" alt="Secretaria da Educação SP" class="client-logo">
+                    <img src="assets/img/clientes/mekra-lang.png" alt="Mekra Lang" class="client-logo">
+                    <img src="assets/img/clientes/prefeitura-cruzeiro.png" alt="Prefeitura de Cruzeiro" class="client-logo">
+                    <img src="assets/img/clientes/prefeitura-paranapanema.png" alt="Prefeitura de Paranapanema" class="client-logo">
+                    <!-- Set 2 -->
+                    <img src="assets/img/clientes/secretaria-educacao-sp.png" alt="Secretaria da Educação SP" class="client-logo">
+                    <img src="assets/img/clientes/mekra-lang.png" alt="Mekra Lang" class="client-logo">
+                    <img src="assets/img/clientes/prefeitura-cruzeiro.png" alt="Prefeitura de Cruzeiro" class="client-logo">
+                    <img src="assets/img/clientes/prefeitura-paranapanema.png" alt="Prefeitura de Paranapanema" class="client-logo">
+                    <!-- Set 3 -->
+                    <img src="assets/img/clientes/secretaria-educacao-sp.png" alt="Secretaria da Educação SP" class="client-logo">
+                    <img src="assets/img/clientes/mekra-lang.png" alt="Mekra Lang" class="client-logo">
+                    <img src="assets/img/clientes/prefeitura-cruzeiro.png" alt="Prefeitura de Cruzeiro" class="client-logo">
+                    <img src="assets/img/clientes/prefeitura-paranapanema.png" alt="Prefeitura de Paranapanema" class="client-logo">
+                    <!-- Set 4 -->
+                    <img src="assets/img/clientes/secretaria-educacao-sp.png" alt="Secretaria da Educação SP" class="client-logo">
+                    <img src="assets/img/clientes/mekra-lang.png" alt="Mekra Lang" class="client-logo">
+                    <img src="assets/img/clientes/prefeitura-cruzeiro.png" alt="Prefeitura de Cruzeiro" class="client-logo">
+                    <img src="assets/img/clientes/prefeitura-paranapanema.png" alt="Prefeitura de Paranapanema" class="client-logo">
+                </div>
+            </div>
+
+            <div class="cta-button-center" data-aos="fade-up" data-aos-delay="300">
+                <a href="pages/clients.html" class="btn btn-secondary">Ver Todos os Clientes e Parceiros →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PROJECTS SECTION PREVIEW ==================== -->
+    <section class="preview-section">
+        <div>
+            <div class="section-header" data-aos="fade-up">
+                <h2>Portfólio de Projetos</h2>
+                <p>Conheça alguns dos nossos trabalhos mais destacados - 150+ projetos concluídos</p>
+            </div>
+
+            <div class="bento-grid">
+                <div data-aos="fade-up" class="bento-item bento-large">
+                    <div class="bento-bg-image" style="background-image: url('assets/img/projetos/banner-emilio.jpg');"></div>
+                    <div class="bento-content">
+                        <h3 class="bento-title">Hospital Emilio Ribas</h3>
+                        <p class="bento-description">Estrutura metálica com 25 pavimentos e fundações profundas.</p>
+                    </div>
+                </div>
+
+                <div data-aos="fade-up" data-aos-delay="100" class="bento-item bento-medium">
+                    <div class="bento-content">
+                        <h3 class="bento-title">Residencial Premium</h3>
+                        <p class="bento-description">Torre residencial com 40 pavimentos e estrutura antisísmica.</p>
+                    </div>
+                </div>
+
+                <div data-aos="fade-up" data-aos-delay="200" class="bento-item bento-wide">
+                    <div class="bento-content">
+                        <h3 class="bento-title">Complexo Industrial</h3>
+                        <p class="bento-description">Galpão industrial otimizado com sistemas de suporte avançado.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cta-button-center" data-aos="fade-up" data-aos-delay="300">
+                <p>Explore nosso portfólio completo com 150+ projetos realizados, filtros por categoria e detalhes de cada obra</p>
+                <a href="pages/projects.html" class="btn btn-secondary">Ver Portfólio Completo →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CTA SECTION ==================== -->
+    <section class="cta-section">
+        <h2 data-aos="fade-up">Pronto para <span>Transformar</span> seu Projeto?</h2>
+        <p data-aos="fade-up" data-aos-delay="100">Completo portfólio, metodologia comprovada, equipe certificada. Vamos conversar sobre como podemos transformar sua visão em realidade.</p>
+        
+        <div class="cta-buttons" data-aos="fade-up" data-aos-delay="200">
+            <a href="pages/contact.html" class="btn btn-primary">Solicitar Orçamento</a>
+            <a href="pages/projects.html" class="btn btn-secondary">Ver Portfólio Completo</a>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-grid">
+                <!-- Brand -->
+                <div>
+                    <div class="footer-brand">
+                        <img src="assets/img/ICON-PNG-FRIG.png" alt="FRIG Engenharia Logo">
+                        <span>FRIG Engenharia</span>
+                    </div>
+                    <p>Soluções em construção civil com qualidade.</p>
+                </div>
+
+                <!-- Links Rápidos -->
+                <div>
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="pages/about.html">Sobre</a></li>
+                        <li><a href="pages/projects.html">Projetos</a></li>
+                        <li><a href="pages/contact.html">Contato</a></li>
+                    </ul>
+                </div>
+
+                <!-- Serviços -->
+                <div>
+                    <h4>Serviços</h4>
+                    <ul>
+                        <li><a href="#">Engenharia Civil</a></li>
+                        <li><a href="#">Estruturas Metálicas</a></li>
+                        <li><a href="#">Consultoria Técnica</a></li>
+                        <li><a href="#">Análise Estrutural</a></li>
+                    </ul>
+                </div>
+
+                <!-- Redes Sociais -->
+                <div>
+                    <h4>Redes Sociais</h4>
+                    <div class="social-links">
+                        <a href="#" title="Facebook">f</a>
+                        <a href="#" title="LinkedIn">in</a>
+                        <a href="#" title="Email">📧</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 FRIG Engenharia. Todos os direitos reservados.</p>
+                <div class="footer-links">
+                    <a href="#">Política de Privacidade</a>
+                    <a href="#">Termos de Uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- External Libraries -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+    <script src="assets/js/pages/common.js"></script>
+    
+    <script>
+        // Show navbar only on scroll
+        let ticking = false;
+        window.addEventListener('scroll', function() {
+            if (!ticking) {
+                window.requestAnimationFrame(function() {
+                    const navbar = document.getElementById('navbar');
+                    if (window.scrollY > 50) {
+                        navbar.classList.add('scrolled');
+                    } else {
+                        navbar.classList.remove('scrolled');
+                    }
+                    ticking = false;
+                });
+                ticking = true;
+            }
+        });
+    </script>
+</body>
+</html>
